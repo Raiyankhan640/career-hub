@@ -41,7 +41,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="h-[40px] px-5 py-2.5 bg-gradient-to-r from-[#7e90fe] to-[#9873ff] rounded-lg text-white text-base font-extrabold font-['Manrope']" href="#">
+                <a className="h-[50px] px-5 py-3 bg-gradient-to-r from-[#7e90fe] to-[#9873ff] rounded-lg text-white text-base font-extrabold font-['Manrope']" href="#">
                     Start Applying
                 </a>
             </div>
