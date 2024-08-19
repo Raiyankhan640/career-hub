@@ -1,8 +1,9 @@
 import { CiLocationOn } from "react-icons/ci";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
-    const { logo, job_title, company_name, remote_or_onsite, location, job_type, salary, job_description } = job;
+    const { id, logo, job_title, company_name, remote_or_onsite, location, job_type, salary, job_description } = job;
 
     return (
         <div className='bg-base-100 shadow-lg rounded-lg flex flex-col gap-4 p-10'>
@@ -35,7 +36,7 @@ const Job = ({ job }) => {
 
             {/* Actions */}
             <div className="flex justify-start">
-                <button className="btn btn-primary">Apply Now</button>
+                <Link to={`/job/${id}`} className="btn btn-primary">View Details</Link>
             </div>
         </div>
     );
